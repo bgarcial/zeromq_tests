@@ -1,0 +1,4 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/cmake-build-debug

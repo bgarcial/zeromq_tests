@@ -1,0 +1,1 @@
+# Prueba de interoperabilidad entre un proceso C++ y Python
