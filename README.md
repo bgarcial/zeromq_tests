@@ -17,7 +17,7 @@ dedicado
 entre endpoints.
 
 
-#Patrones básicos de zeromq
+# Patrones básicos de zeromq
 
 zeromq trabaja con los siguientes [patrones de mensajería](http://zguide.zeromq.org/page:all#Messaging-Patterns)
 
@@ -48,3 +48,68 @@ zeromq trabaja con los siguientes [patrones de mensajería](http://zguide.zeromq
  Esta ideado para tratar problemas de escalabilidad permitiendo múltiples conexiones entre sockets con los
  patrones de mensajería previamente mencionados
  
+ 
+ # Instalando el cliente c++
+ 
+ + **Descargar los paquetes necesarios** (Ubuntu)
+ 
+ `sudo apt-get install libtool pkg-config build-essential autoconf automake`
+ 
+ + **Instalar la librería `libsodium`** 
+ 
+ `wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz`
+ 
+ `tar -zxvf LATEST.tar.gz`
+ 
+ `cd libsodium-stable`
+ 
+ `sudo ./configure`
+ 
+ `sudo make`
+ 
+ `sudo make install`
+ 
+ `sudo ldconfig`
+ 
+ + **Usando zeroMQ binding para C++**
+ 
+  `cd /usr/include/`
+  
+  `sudo wget https://raw.githubusercontent.com/zeromq/cppzmq/master/zmq.hpp`
+  
+  De esta manera, uatilizamos `#include <zmq.hpp>` como headers en el cliente C++
+  
+  
+  + **Verificando la instalación correcta de ambos paquetes**
+  
+   `cd /usr/local/lib`
+   
+   `ls`
+   
+   Debemos mirar `libsodium.so` y `libzmq.so` en este directorio.
+   
+   
+   
+Adicionalmente se debe tener instalado los siguientes paquetes
+
+* gcc
+* Cmake
+* Pyzmq --- Para el servidor python ---  `pip install pyzmq`
+
+
+# Ejecutando scripts Cliente y Servidor
+
++ Ejecutando el servidor python
+
+`cd zeroMQ_Server`
+ 
+`python zeromq_server.py` 
+
++ Ejecutando el cliente C++
+
+`g++ client.cpp -o client.out -lzmq`
+
+`./client.out`
+   
+      
+  
