@@ -93,6 +93,9 @@
 		<Unit filename="/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/main.cpp">
 			<Option target="zeroMQ_C___Client_Python_Server"/>
 		</Unit>
+		<Unit filename="/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/server.cpp">
+			<Option target="zeroMQ_C___Client_Python_Server"/>
+		</Unit>
 		<Unit filename="/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

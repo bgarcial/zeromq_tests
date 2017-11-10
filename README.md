@@ -103,13 +103,19 @@ Adicionalmente se debe tener instalado los siguientes paquetes
 
 `cd zeroMQ_Server`
  
-`python zeromq_server.py` 
+`python server.py` 
 
 + Ejecutando el cliente C++
 
 `g++ client.cpp -o client.out -lzmq`
 
 `./client.out`
+
+
+Tambien existe un cliente python llamado `client.py`   y un servidor c++ llamado `server.cpp`
+
+Su ejecución es de la misma manera.
+
    
       
   

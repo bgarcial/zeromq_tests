@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/client.cpp" "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/cmake-build-debug/CMakeFiles/zeroMQ_C___Client_Python_Server.dir/client.cpp.o"
   "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/client_get-time-of-day.cpp" "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/cmake-build-debug/CMakeFiles/zeroMQ_C___Client_Python_Server.dir/client_get-time-of-day.cpp.o"
   "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/main.cpp" "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/cmake-build-debug/CMakeFiles/zeroMQ_C___Client_Python_Server.dir/main.cpp.o"
+  "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/server.cpp" "/home/bgarcial/CLionProjects/zeroMQ_C++_Client-Python_Server/cmake-build-debug/CMakeFiles/zeroMQ_C___Client_Python_Server.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

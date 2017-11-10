@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/zeroMQ_C___Client_Python_Server.dir/main.cpp.o"
   "CMakeFiles/zeroMQ_C___Client_Python_Server.dir/client.cpp.o"
   "CMakeFiles/zeroMQ_C___Client_Python_Server.dir/client_get-time-of-day.cpp.o"
+  "CMakeFiles/zeroMQ_C___Client_Python_Server.dir/server.cpp.o"
   "zeroMQ_C___Client_Python_Server.pdb"
   "zeroMQ_C___Client_Python_Server"
 )
