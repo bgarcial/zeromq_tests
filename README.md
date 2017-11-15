@@ -77,11 +77,17 @@ zeromq trabaja con los siguientes [patrones de mensajería](http://zguide.zeromq
  
  ```
  wget https://github.com/zeromq/libzmq/releases/download/v4.2.2/zeromq-4.2.2.tar.gz
+ 
  tar -zxvf zeromq-4.2.2.tar.gz 
+ 
  cd zeromq-4.2.2/
+ 
  sudo ./configure
+ 
  sudo make
+ 
  sudo make install
+ 
  sudo ldconfig 
  ```
  
@@ -99,8 +105,7 @@ zeromq trabaja con los siguientes [patrones de mensajería](http://zguide.zeromq
   + **Verificando la instalación correcta de ambos paquetes**
   
    ```
-   cd /usr/local/lib
-   
+   cd /usr/local/lib 
    
    ls
    ```
@@ -132,7 +137,6 @@ Es necesario compilarlo primero y despues ejecutar el archivo binario
 
 ```
 g++ client_get-time-of-day.cpp -o client_get-time-of-day.out -lzmq
-
 
 ./client_get-time-of-day.out
 ```
