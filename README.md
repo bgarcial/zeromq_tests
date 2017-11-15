@@ -57,34 +57,53 @@ zeromq trabaja con los siguientes [patrones de mensajería](http://zguide.zeromq
  
  + **Instalar la librería `libsodium`** 
  
- `wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz`
+ ```
+ wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
  
- `tar -zxvf LATEST.tar.gz`
+ tar -zxvf LATEST.tar.gz
  
- `cd libsodium-stable`
+ cd libsodium-stable
  
- `sudo ./configure`
+ sudo ./configure
  
- `sudo make`
+ sudo make
  
- `sudo make install`
+ sudo make install
  
- `sudo ldconfig`
+ sudo ldconfig
+  ```
+  
+ + **Instalando el paquete zeroMQ**
+ 
+ ```
+ wget https://github.com/zeromq/libzmq/releases/download/v4.2.2/zeromq-4.2.2.tar.gz
+ tar -zxvf zeromq-4.2.2.tar.gz 
+ cd zeromq-4.2.2/
+ sudo ./configure
+ sudo make
+ sudo make install
+ sudo ldconfig 
+ ```
  
  + **Usando zeroMQ binding para C++**
  
-  `cd /usr/include/`
+  ```
+  cd /usr/include/
   
-  `sudo wget https://raw.githubusercontent.com/zeromq/cppzmq/master/zmq.hpp`
+  sudo wget https://raw.githubusercontent.com/zeromq/cppzmq/master/zmq.hpp
+  ```
   
   De esta manera, uatilizamos `#include <zmq.hpp>` como headers en el cliente C++
   
   
   + **Verificando la instalación correcta de ambos paquetes**
   
-   `cd /usr/local/lib`
+   ```
+   cd /usr/local/lib
    
-   `ls`
+   
+   ls
+   ```
    
    Debemos mirar `libsodium.so` y `libzmq.so` en este directorio.
    
@@ -101,16 +120,22 @@ Adicionalmente se debe tener instalado los siguientes paquetes
 
 + Ejecutando el servidor python
 
-`cd zeroMQ_Server`
+```
+cd zeroMQ_Server
  
-`python server.py` 
+python server.py
+```
 
 + Ejecutando el cliente C++
 
-`g++ client.cpp -o client.out -lzmq`
+Es necesario compilarlo primero y despues ejecutar el archivo binario
 
-`./client.out`
+```
+g++ client_get-time-of-day.cpp -o client_get-time-of-day.out -lzmq
 
+
+./client_get-time-of-day.out
+```
 
 Tambien existe un cliente python llamado `client.py`   y un servidor c++ llamado `server.cpp`
 
